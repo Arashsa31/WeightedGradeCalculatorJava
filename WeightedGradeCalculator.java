@@ -19,11 +19,11 @@ import java.util.Scanner;
  *grade between 70 and 79 percent is a C, any grade between 60 and 69 percent is a D, and any
  *grade below 60 percent is an F.
  *
- *The program should read in the student’s scores and display the student’s record, which
- *consists of two quiz scores, two exam scores, the student’s total score for the 
+ *The program should read in the studentâ€™s scores and display the studentâ€™s record, which
+ *consists of two quiz scores, two exam scores, the studentâ€™s total score for the 
  *entire course, and the final letter grade. The total score is a number in 
  *the range 0 to 100, which represents the
- *weighted average of the student’s work.
+ *weighted average of the studentâ€™s work.
  *
  *Define and use a class for the student record. 
  *The class should have instance variables for the 
@@ -125,42 +125,38 @@ public class WeightedGradeCalculator
 			return 'F';	
 	}
 	/**
-	 * calculates grade score
-	 * @param quiz
-	 * @param midtermExam
-	 * @param finalExam
-	 * @return
+	 * @return calculates grade score
 	 */
 	public double getWeightedGrade() {
 		return ((getQuiz1()+getQuiz2()) / 20 * 100 * 0.25 ) + (getMidtermExam() * 0.25) + (getFinalExam() * 0.50);
 	}	
 	/**
-	 * @return
+	 * @return quiz1
 	 */
 	public double getQuiz1() {
 		return quiz1;
 	}	
 	/**
-	 * @return
+	 * @return quiz2
 	 */
 	public double getQuiz2() {
 		return quiz2;
 	}
 	/**
-	 * @return
+	 * @return midtermExam
 	 */
 	public double getMidtermExam()	{
 		return midtermExam;
 	}
 	/**
-	 * @return
+	 * @return finalExam
 	 */
 	public double getFinalExam()	{
 		return finalExam;
 	}
 	/**
 	 * 
-	 * @param q1
+	 * @param quiz1
 	 */
 	public void setQuiz1(double quiz1) {
 		if(quiz1 >= 100 && quiz1 <= 0)
@@ -168,7 +164,7 @@ public class WeightedGradeCalculator
 	}
 	/**
 	 * 
-	 * @param q2
+	 * @param quiz2
 	 */
 	public void setQuiz2(double quiz2) {
 		if(quiz2 >= 0 && quiz2 <= 100)
@@ -176,7 +172,7 @@ public class WeightedGradeCalculator
 	}
 	/**
 	 * 
-	 * @param mt
+	 * @param midTerm
 	 */
 	public void setMidterm(double midTerm) {
 		if(midTerm >= 0 && midTerm <= 100)
@@ -184,7 +180,7 @@ public class WeightedGradeCalculator
 	}
 	/**
 	 * 
-	 * @param fe
+	 * @param finalExam
 	 */
 	public void setFinalExam(double finalExam) {
 		if(finalExam >= 0 && finalExam <= 100)
