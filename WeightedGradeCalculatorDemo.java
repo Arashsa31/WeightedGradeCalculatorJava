@@ -4,9 +4,6 @@
  */
 public class WeightedGradeCalculatorDemo {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		WeightedGradeCalculator student1 = new WeightedGradeCalculator(); 
 		WeightedGradeCalculator student2 = new WeightedGradeCalculator(0, 0, 0, 0);
